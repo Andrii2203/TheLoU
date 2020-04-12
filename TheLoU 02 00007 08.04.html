@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>TheLoU</title>
+            <meta charset="UTF-8">
+            <meta name="description" content="copy page the last of us">
+            <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+            <meta name="author" content="Andrii">
+            <meta name="viewport" content="width-devise-width, initial-scale=1.0">
+            <style>
+                * {
+                }
+                html, body {
+                    margin: 0;
+                    border: 0;
+                }
+                body {
+                    background-attachment: scroll;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    font-family: oswald semibold;
+                    background-color: rgb(117, 117, 117);
+                    color:rgb(255, 255, 255);
+                }
+                .fp-layout {
+                    border: 0;
+                    margin: 0;
+                    height: 100%;
+                }
+                .div4 {
+                    width: 20%;
+                    height: 583px;
+                    position: relative;
+                    left: 3.7vw;
+                }
+                .img3 {
+                    position: absolute;
+                    max-width: 88%;
+                    bottom: 0;
+                }
+                .div3 {
+                    width: 25%;
+                    height: 85px;
+                    bottom: 0;
+                    position: relative;
+                }
+                .table1 {
+                    position: relative;
+                    bottom: 0vw;
+                    left: 1.6vw;
+                }
+                .table2 {
+                    position: relative;
+                    bottom: 1.3vw;
+                    left: 84.3vw;
+                }
+                .div2 {
+                    right: 10vw;
+                }
+                .img2 {
+                    position: absolute;
+                    bottom: 0;
+                    max-width: 11vw;
+                }
+                .div1 {
+                    height: 53px;
+                    position: relative;
+                }
+                .img1 {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                }
+                a:visited {
+                    color: rgb(126, 125, 125);
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: rgb(243, 204, 30);
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+                a:active {
+                    color: rgb(243, 204, 30);
+                    background-color: transparent;
+                    text-decoration: none; 
+                }
+                a:link, a:visited {
+                    background-color: transparent;
+                    color: rgb(126, 125, 125);
+                    padding: 24px 23px;
+                    font-weight: 700;
+                    text-align: center;
+                    text-decoration: none; 
+                    display: inline-block;
+                }
+                a:hover, a:active {
+                    color: rgb(243, 204, 30);
+                    background-color: transparent;
+                }
+                #preorderup {
+                    color: rgb(243, 204, 30);
+                    padding-right: 3em;
+                }
+                #preorderdown {
+                    color: rgb(15, 15, 15);
+                    background-color: rgb(243, 204, 30);
+                    padding: 13px;
+                    width: 6em;
+                    bottom: 5vw;
+                }
+                #preorderdown:hover {
+                    color: white;
+                }
+                #watchdown {
+                    color: rgb(255, 255, 255);
+                    background-color: transparent;
+                    border: 3px solid rgb(243, 204, 30);
+                    padding: 10px;
+                    bottom: 5vw;
+                }
+                #watchdown:hover {
+                    color: #000000;
+                    background-color: rgba(243, 204, 30, 0.4);
+                }
+                #games:hover {
+                    color: rgb(243, 204, 30);
+                }
+                nav {
+                    float: right;
+                }
+                .dropbtn {
+                    background-color: transparent;
+                    color: rgb(126, 125, 125);
+                    padding: 21px 30px;
+                    border: none;
+                    cursor: pointer;
+                    font-family: oswald semibold;
+                    font-size: 16px;
+                }
+                .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    min-width: 250px;
+                }
+                .dropdown-content a{
+                    color: rgb(126, 125, 125);
+                    padding: 21px 30px;
+                    text-align: center;
+                    text-decoration: none; 
+                    display: inline-block;
+                }
+                .dropdown-content a:hover {
+                    color:rgba(0, 0, 0);
+                    background-color: rgb(243, 204, 30);
+                }
+                .dropdown:hover .dropdown-content {
+                    background-color: rgba(0, 0, 0, 0.6);
+                    display: block;
+                }
+                .dropdown:hover .dropbtn {
+                    background-color: transparent;
+                }
+                nav.sticky {
+                    position: -webkit-sticky;
+                    position: sticky;
+                    top: 0;
+                    padding: 5px;
+                    background-color: transparent;
+                    border: transparent;
+                }
+                #myVideo {
+                    z-index: -1;
+                    position: absolute;
+                    overflow: hidden;
+                    min-width: 100%;
+                    min-height: 100%;
+                    width: auto;
+                    height: auto;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%); 
+                }
+                .full-screen-video-container {
+                    position: absolute;
+                    height: 100vh;
+                    width: 98.8vw;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                }
+                section {
+                    height: 100vh;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="fp-layout">
+                <div class="full-screen-video-container">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="//media.playstation.com/is/content/SCEA/explore/games/l/la/the-last-of-us-part-ii/us/ps4/website/videos/the-last-of-us-part-ii-live-video-block-01-ps4-us-23sep19.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <nav class="sticky">
+                    <div class="dropdown">
+                        <button class="dropbtn" id="games">
+                            GAMES
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="https://www.playstation.com/uk-ua/games/the-last-of-us-left-behind-stand-alone-ps4/">
+                                THE LAST OF US: LEFT BEHIND
+                            </a>
+                            </a>
+                            <a href="https://www.playstation.com/uk-ua/games/the-last-of-us-remastered-ps4/">
+                                THE LAST OF US
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#">
+                        ABOUT
+                    </a>
+                    <a href="#">
+                        MEDIA
+                    </a>
+                    <a href="#">
+                        NEWS
+                    </a>
+                    <a href="#" id="preorderup">
+                        PRE ORDER
+                    </a>
+                </nav>
+                <div class="div4">
+                    <img src="https://media.playstation.com/is/image/SCEA/the-last-of-us-part-ii-tall-logo-ps4-us-24aug19?$native_md_t$" class="img3">
+                </div>  
+                <table rowspan="2" class="div3 table1">
+                    <th>
+                        <div>
+                            <a href="#" id="preorderdown">
+                                PRE ORDER
+                            </a>
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <a href="#" id="watchdown">
+                                WATCH TRAILER
+                            </a>
+                        </div>
+                    </th>              
+                </table> 
+                <table class="table2"> 
+                    <th>
+                        <div class="div2">
+                            <img src="https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-esrb-rating-image-block-01-ps4-24jan20-en-us.jpg" class="img2" />
+                        </div>
+                    </th> 
+                </table>
+                <div class="div1">     
+                    <img src="https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-bottom-texture-ps4-us-24aug19.png" class="img1">
+                </div> 
+            </div>
+            <section>
+                Hello world
+            </section>
+        </body>
+    </html>

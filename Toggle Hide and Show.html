@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>TheLoU</title>
+            <meta charset="UTF-8">
+            <meta name="description" content="copy page the last of us">
+            <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+            <meta name="author" content="Andrii">
+            <meta name="viewport" content="width-devise-width, initial-scale=1.0">
+            <style>
+                * {
+                    background-image: url(https://github.com/Andrii2203/TheLoU/blob/master/the-last-of-us-outbreak-day-art-01-us-25sep19.jpg?raw=true);
+                    font-family: oswald semibold;
+                    font-size: 16px;
+                    background-size: cover;
+                    background-color: rgb(136, 94, 94);
+                    color:rgb(255, 255, 255);
+                }
+                a:visited {
+                    color: rgb(126, 125, 125);
+                    background-color: black;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: rgb(255, 208, 0);
+                    background-color: black;
+                    text-decoration: none;
+                }
+                a:active {
+                    color: rgb(255, 208, 0);
+                    background-color: black;
+                    text-decoration: none; 
+                }
+                a:link, a:visited {
+                    background-color: black;
+                    color: rgb(126, 125, 125);
+                    padding: 24px 23px;
+                    font-weight: 700;
+                    text-align: center;
+                    text-decoration: none; 
+                    display: inline-block;
+                }
+                a:hover, a:active {
+                    color: rgb(255, 208, 0);
+                    background-color: black;
+                }
+                #preorderup {
+                    color: rgb(255, 208, 0);
+                    padding-right: 3em;
+                }
+                button:hover {
+                    color: rgb(255, 208, 0);
+                }
+                nav {
+                    float: right;
+                }
+                #myDIV {
+                    width: 16.59%;
+                    margin-left: 825px;
+                    text-align: center;
+                }
+                .button {
+                    color: rgb(126, 125, 125);
+                    background-color: black;
+                    border: 0;
+                    margin: 0;
+                    padding: 0;
+                }
+                .yourDiv {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 5em;
+                    right: 18em;
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
+                .yourDiv a {
+                    text-align: left;
+                    padding: 15px;
+                }
+                .yourDiv a:hover {
+                    background-color: rgb(255, 208, 0);
+                }
+                .sec1:hover {
+                    color:rgb(0, 0, 0,);
+                }
+            </style>
+        </head>
+        <body>
+            <nav>
+                <button onclick="myFunction()" class="button">
+                    <a href="#">
+                        GAMES
+                    </a>
+                </button>
+                <a href="#">
+                    ABOUT
+                </a>
+                <a href="#">
+                    MEDIA
+                </a>
+                <a href="#">
+                    NEWS
+                </a>
+                <a href="#" id="preorderup">
+                    PRE ORDER
+                </a>
+            </nav>
+            <div id="myDIV">
+                <div class="yourDiv">
+                    <a href="https://www.playstation.com/uk-ua/games/the-last-of-us-left-behind-stand-alone-ps4/"class="sec1">
+                        THE LAST OF US: LEFT BEHIND
+                    </a>
+                    <a href="https://www.playstation.com/uk-ua/games/the-last-of-us-remastered-ps4/" class="sec2">
+                        THE LAST OF US
+                    </a>
+                </div>
+            </div>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myDIV");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+        </body>
+    </html>
