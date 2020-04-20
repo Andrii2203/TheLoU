@@ -8,13 +8,16 @@
             <meta name="author" content="Andrii">
             <meta name="viewport" content="width-devise-width, initial-scale=1.0">
             <style>
-                body {
+                * {
                     font-family: oswald semibold;
-                    background-color: rgb(0, 0, 0);
+                }
+                body {
                     color:rgb(255, 255, 255);
-                    border: 0;
-                    margin: 0;
-
+                    border: 0em;
+                    margin: 0em;
+                    background-color: rgb(0, 0, 0);
+                    height: 44em;
+                    width: 80.8em;
                 }
                 a:visited {
                     color: rgb(148, 148, 148);
@@ -34,65 +37,36 @@
                 a:link, a:visited {
                     background-color: transparent;
                     color: rgb(148, 148, 148);
-                    padding: 21px 30px;
+                    padding: 18px 19px;
                     text-align: center;
                     text-decoration: none;
                     display: inline-block;
+                    font-size: 15.5px;
                 }
                 a:hover, a:active {
                     color: rgb(255, 208, 0);
                     background-color: transparent;
                     
                 }
-                .imgbottom {
-                    position: absolute;
-                    width: 100%;
+                .img_bottom2 {
+                    width: 80.8em;
                     height: 7%;
-                    bottom: 0;
-                    padding: 0px;
-                }
-                .imgbottom2 {
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
+                    position: absolute;
                     bottom: 0;
                 }
-                .imgright {
+                .img_right2 {
                     position: absolute;
                     width: 17.5%;
                     height: 72.5%;
                     left: 3.7%;
                     bottom: 17.5%;
                 }
-                .imgright2 {
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-
-                }
-                .imgmature {
+                .img_mature2 {
+                    width: 11%;
+                    height: 9.5%;
                     position: absolute;
-                    width: 10%;
-                    height: 10%;
-                    bottom: 8.4%;
-                    right: 4.7%;
-                }
-                .imgmature2 {
-                    width: 111%;
-                    height: 94%;
-                    position: relative;
-                }
-                .imgelly {
-                    position: absolute;
-                    width: 62%;
-                    height: 89%; 
-                    bottom: -89%;  
-                    right: 0;
-                }
-                .imgelly2 {
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
+                    bottom: 9%;
+                    right: 3.6%;
                 }
                 button {
                     color: rgb(148, 148, 148);
@@ -105,42 +79,34 @@
                     color: rgb(255, 208, 0);
                     background-color: transparent;
                 }
-                nav {
-                    width: 100%;
-                    height: 100%;
-                    position: fixed;
-                }
                 .nav {
-                    height: 100px;
-                    width: 540px;
-                    right: 10px;
-                    position: absolute;
+                    position: fixed;
+                    right: 0em;
                 }
-                section {
-                    display: flex;
-                    color: #ffffff;
-                    height: 100vh;
-                    width: 45vw;
+                .width_height {
+                    margin-top: 0.5em;
+                    margin-right: 2em;
                 }
-                .underrightpic {
+                .underright_picture {
                     position: absolute;
                     bottom: 8%;
-                    left: 2.5%;
+                    left: 2.1em;
                     font-size: 17px;
                 }
-                .underrightpic a {
+                .underright_picture a {
                     padding: 10px;
                     color: #000000;
                     margin: 13.5px;
                 }
-                #bprebut {
+                #bottom_pre_button {
                     background-color: rgb(255, 208, 0);
                     padding-left: 19px;
                     padding-right: 19px;
                     padding-top: 9px;
                     padding-bottom: 9px;
+                    font-size: 16px;
                 }
-                #watchbut {
+                #watch_button {
                     background-color: transparent;
                     border: 3px solid rgb(255, 208, 0);
                     padding-left: 17px;
@@ -148,11 +114,12 @@
                     padding-top: 6px;
                     padding-bottom: 6px;
                     color: #ffffff;
+                    font-size: 16px;
                 }
-                #bprebut:hover {
+                #bottom_pre_button:hover {
                     color: #ffffff;
                 }
-                #watchbut:hover {
+                #watch_button:hover {
                     background-color: rgba(255, 208, 0, 0.4);
                     color: #000000;
                 }
@@ -163,9 +130,7 @@
                     font-size: 16px;
                     border: none;
                     cursor: pointer;
-                }
-                .dropbtn:active {
-                    color: rgb(255, 208, 0);
+                    font-size: 15.5px;
                 }
                 .dropbtn:hover, .dropbtn:focus {
                     background-color: transparent;
@@ -198,27 +163,57 @@
                 #tprebut {
                     color: rgb(255, 208, 0);
                 }
-                .maineimg {
-                    height: 100vh;
-                    width: 98.8vw;
+                .maine_img {
+                    height: 45.4em;
+                    width: 80.8em;
                 }
-                .text-elly {
-                    padding-left: 40px;
-                    padding-top: 100px;
-                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                .text_elly {
+                    width: 31em;  
+                    height: 30em;
+                    position: absolute;
+                    left: 3.7%;
+                    top: 17%;
                 }
-                #header-the-last {
+                #header_the_last {
                     font-size: 2em;
                     border-bottom: 4px solid rgb(255, 208, 0);
                     font-family: oswald semibold;
-                    width: 69%;  
-                  
+                    width: 9.4em;  
+                }
+                .img_elly2 {
+                    width: 50m;
+                    height: 40em; 
+                    position: absolute;
+                    right: 0%;
+                    top: 0%;
+                }
+                .p_text_elly {
+                    font-family: 'Segoe UI';
+                    font-size: 15px;
+                }
+                .page2 {
+                    position: relative;
+                    color: #ffffff;
+                    height: 43em;
+                    width: 80.8em;
+                    background-color: rgb(0, 0, 0);
+                }
+                /* .grad_bottom { 
+                    height: 150px;
+                    background-color: transparent;
+                    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgba(0,0,0,0.0));
+                } */
+                .img_bottom_elly {
+                    width: 80.8em;
+                    height: 7%;
+                    position: absolute;
+                    bottom: 0;
                 }
             </style>
         </head>
         <body>
             <div class="nav">
-                <nav>
+                <nav class="width_height">
                     <div class="dropdown">
                         <button id="myBtn" class="dropbtn">
                             GAMES &#8744
@@ -246,46 +241,60 @@
                     </a>
                 </nav>
             </div>
-            <div class="mainep">
-                <div class="underrightpic">
-                    <a href="#" id="bprebut">
+            <div class="underright_picture">
+                    <a href="#" id="bottom_pre_button">
                         PRE ORDER
                     </a>
-                    <a href="#" id="watchbut">
+                    <a href="#" id="watch_button">
                         WATCH TRAILER
                     </a>
                 </div>
-                <div class="imgbottom">      
-                    <img src="https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-bottom-texture-ps4-us-24aug19.png" class="imgbottom2">
+            <div>
+                <div>      
+                    <img src="https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-bottom-texture-ps4-us-24aug19.png" class="img_bottom2">
                 </div> 
-                <div class="imgmature">
-                    <img src="https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-esrb-rating-image-block-01-ps4-24jan20-en-us.jpg" class="imgmature2">
+                <div>
+                    <img src="https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-esrb-rating-image-block-01-ps4-24jan20-en-us.jpg" class="img_mature2">
                 </div>
-                <div class="imgright">   
-                    <img src="https://media.playstation.com/is/image/SCEA/the-last-of-us-part-ii-tall-logo-ps4-us-24aug19?$native_md_t$" class="imgright2">
+                <div>   
+                    <img src="https://media.playstation.com/is/image/SCEA/the-last-of-us-part-ii-tall-logo-ps4-us-24aug19?$native_md_t$" class="img_right2">
                 </div>
-                <img src="https://github.com/Andrii2203/TheLoU/blob/master/the-last-of-us-outbreak-day-art-01-us-25sep19.jpg?raw=true" class="maineimg">
+                <img src="https://github.com/Andrii2203/TheLoU/blob/master/the-last-of-us-outbreak-day-art-01-us-25sep19.jpg?raw=true" class="maine_img">
             </div>
-            <section>
-                <div class="header-text-elly">
-                </div>
-                <div class="text-elly">
-                    <h1 id="header-the-last">THE LAST OF US PART II</h1>
-                    <p>Five years after their dangerous journey across the post-pandemic 
-                        United States, Ellie and Joel 
-                        have settled down in Jackson, Wyoming. Living 
-                        amongst a thriving community of survivors has allowed 
-                        them peace and stability, despite the constant threat of 
-                        the infected and other, more desperate survivors.</p>
+            <div>
+                <div class="page2 grad_bottom grad_top">
+                    <section>
+                        <div>
+                            <img src="https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-splash-bgb-ellie-ps4-us-24aug19.jpg" class="img_elly2">
+                        </div>
+                        <div class="text_elly">
+                            <h1 id="header_the_last">THE LAST OF US PART II</h1>
+                            <p class="p_text_elly"> Five years after their dangerous journey across the post-pandemic 
+                                United States, Ellie and Joel 
+                                have settled down in Jackson, Wyoming. Living 
+                                amongst a thriving community of survivors has allowed 
+                                them peace and stability, despite the constant threat of 
+                                the infected and other, more desperate survivors.</p>
 
-                    <p>When a violent event disrupts that peace, Ellie embarks on a relentless journey to carry 
-                        out justice and find closure. As she hunts those responsible one by one, she is confronted 
-                        with the devastating physical and emotional repercussions of her actions.</p>
+                            <p class="p_text_elly">When a violent event disrupts that peace, Ellie embarks on a relentless journey to carry 
+                                out justice and find closure. As she hunts those responsible one by one, she is confronted 
+                                with the devastating physical and emotional repercussions of her actions.</p>
+                        </div>
+                        <div>
+                            <img src="https://github.com/Andrii2203/TheLoU/blob/master/the-last-of-us-part-ii-top-texture-ps4-us-24aug19.png?raw=true" class="img_bottom_elly">
+                        </div>
+                    <section>
                 </div>
-                <div class="imgelly">
-                    <img src="https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-splash-bgb-ellie-ps4-us-24aug19.jpg" class="imgelly2">
+            </div>
+            <div>
+                <div>
+                    <section>
+                        <div>
+                            <img src="">
+                        </div>
+                    </section>
                 </div>
-            <section>
+            </div>
             <script>
                 document.getElementById("myBtn").onclick = function() {myFunction()};
                 function myFunction() {
