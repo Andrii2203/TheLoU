@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>TheLoU</title>
+            <meta charset="UTF-8">
+            <meta name="description" content="copy page the last of us">
+            <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+            <meta name="author" content="Andrii">
+            <meta name="viewport" content="width-devise-width, initial-scale=1.0">
+            <style>
+                body {
+                    color:rgb(255, 255, 255);
+                    background-color: rgb(148, 148, 148);
+                    font-family: oswald semibold;
+                    margin: 0;
+                }
+                .page1 {
+                    color:rgb(255, 255, 255);
+                    height: 45.4em;
+                    width: 80.85em;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image: url("https://github.com/Andrii2203/TheLoU/blob/master/the-last-of-us-outbreak-day-art-01-us-25sep19.jpg?raw=true");
+                }
+                a:visited {
+                    color: rgb(148, 148, 148);
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: rgb(255, 208, 0);
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+                a:active {
+                    color: rgb(243, 30, 30);
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+                a:link, a:visited {
+                    background-color: transparent;
+                    color: rgb(148, 148, 148);
+                    padding: 18px 19px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 15.5px;
+                }
+                a:hover, a:active {
+                    color: rgb(255, 208, 0);
+                    background-color: transparent;
+                    
+                }
+                .img_bottom2 {
+                    height: 7%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image: url("https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-bottom-texture-ps4-us-24aug19.png");
+                }
+                .img_right2 {
+                    width: 23%;
+                }
+                button {
+                    color: rgb(148, 148, 148);
+                    text-decoration: none;
+                    background-color: transparent;
+                    font-family: oswald semibold;
+                    font-size: 16px;
+                }
+                button:hover {
+                    color: rgb(255, 208, 0);
+                    background-color: transparent;
+                }
+                .nav {
+                    position: fixed;
+                    right: 0em;
+                }
+                .width_height {
+                    margin-top: 0.5em;
+                    margin-right: 2em;
+                }
+                .underright_picture {
+                    font-size: 17px;
+                    padding-top: 4.4em;
+                    padding-left: 2.5em;
+                }
+                .underright_picture a {
+                    padding: 10px;
+                    color: #000000;
+                    margin: 13.5px;
+                }
+                .underright_picture >:nth-child(1) {
+                    float: left;
+                    width: 80%;
+                }
+                .underright_picture >:nth-child(2) {
+                    float: right;
+                    width: 19%;
+                    height: 35em;
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                    background-image: url("https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-esrb-rating-image-block-01-ps4-24jan20-en-us.jpg");
+                    background-size: 145px;
+                }
+                .underright_picture >:nth-child(3) {
+                    clear: both;
+                }
+                #bottom_pre_button {
+                    background-color: rgb(255, 208, 0);
+                    padding-left: 19px;
+                    padding-right: 19px;
+                    padding-top: 9px;
+                    padding-bottom: 9px;
+                    font-size: 16px;
+                    margin: 0;
+                }
+                #watch_button {
+                    background-color: transparent;
+                    border: 3px solid rgb(255, 208, 0);
+                    padding-left: 17px;
+                    padding-right: 17px;
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                    color: #ffffff;
+                    font-size: 16px;
+                    margin-left: 2em;
+                }
+                #bottom_pre_button:hover {
+                    color: #ffffff;
+                }
+                #watch_button:hover {
+                    background-color: rgba(255, 208, 0, 0.4);
+                    color: #000000;
+                }
+                .arrow {
+                    border: solid rgb(148, 148, 148);
+                    border-width: 0 1px 1px 0;
+                    display: inline-block;
+                    padding: 4px;
+                }
+                .down {
+                    transform: rotate(45deg);
+                    margin: 3px;
+                }
+                i:hover {
+                    border-color:rgb(255, 208, 0);
+                }
+                .dropbtn {
+                    color:rgb(194, 169, 169);
+                    padding: 0px;
+                    padding-right: 25px;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 15.5px;
+                }
+                .dropdown, .dropbtn:active {
+                    position: relative;
+                    display: inline-block;
+                    color: rgb(255, 208, 0);
+                }
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, .8);
+                    min-width: 160px;
+                    overflow: auto;
+                }
+                .dropdown-content a {
+                    color: rgb(148, 148, 148);
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .dropdown-content a:hover {
+                    background-color: rgb(255, 208, 0);
+                    color: rgb(0, 0, 0);
+                }
+                .show {
+                    display: block;
+                }
+                #tprebut {
+                    color: rgb(255, 208, 0);
+                }
+                .text_elly {
+                    padding-top: 8em;
+                    padding-left: 3em;
+                }
+                #header_the_last {
+                    border-bottom: 4px solid rgb(255, 208, 0);
+                    width: 9.4em;  
+                }
+                .img_elly2 {
+                    background-image: 
+                    radial-gradient(rgba(255,0,0,0)50%, rgb(0,0,0)70%),
+                    url("https://github.com/Andrii2203/TheLoU/blob/master/the-last-of-us-part-ii-splash-bgb-ellie-ps4-us-24aug19.jpg?raw=true");
+
+                    width: 48em;
+                    height: 40em; 
+                    float: right;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .p_text_elly {
+                    font-family: 'Segoe UI';
+                    font-size: 15px;
+                }
+                .page2 {
+                    color: #ffffff;
+                    height: 40em;
+                    width: 80.85em;
+                    background-color: rgb(0, 0, 0);
+                    top: 0;
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                }
+                .img_bottom_elly {
+                    width: 80.85em;
+                    height: 7%;
+                    margin-bottom: -5px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image: url("https://github.com/Andrii2203/TheLoU/blob/master/the-last-of-us-part-ii-top-texture-ps4-us-24aug19.png?raw=true");
+                }
+                .page3 {
+                    color: #ffffff;
+                    height: 54em;
+                    width: 80.85em;
+                    background-color: rgb(153, 0, 0);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image: url("https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-forest-bg-ps4-us-24aug19.jpg");
+                }
+                .maine_img_page3 {
+                    height: 44.5em;
+                    width: 80.85em;
+                }
+                .img_bottom_page3 {
+                    height: 51px;
+                    margin-top: 20px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image: url("https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-bottom-texture-ps4-us-24aug19.png");
+                } 
+                #header_choose {
+                    border-bottom: 4px solid rgb(255, 208, 0);
+                    width: 9.11em;  
+                    margin: 0;
+                }
+                .header_choose_your_edition {
+                    padding-left: 3em;
+                }
+                .nav_choose {
+                    padding-top: 10px;
+                    margin-left: -18px;
+                }
+                .nav_choose:hover {
+                    color:rgb(255, 255, 255);
+                }
+                .img_choose {
+                    float: left;
+                    width: 50em;
+                    height: 37%;
+                    margin-left: 3%;
+                    margin-top: 10%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image: url("https://github.com/Andrii2203/TheLoU/blob/master/the-last-of-us-part-ii-ellie-edition-ps4-en-us-12mar20.png?raw=true");
+                }
+                .p_choose {
+                    margin-top: 38em;
+                    margin-left: 20em;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 13px;
+                }
+                #bottom_ellie_edition {
+                    background-color: rgb(255, 208, 0);
+                    padding-left: 19px;
+                    padding-right: 19px;
+                    padding-top: 9px;
+                    padding-bottom: 9px;
+                    font-size: 16px;
+                    margin-top: -10px;
+                    color: #000000
+                }
+                #bottom_ellie_edition:hover {
+                    color: #ffffff;
+                }
+                .about_ellie_edition{
+                    margin-right: 5em;
+                }
+                .div_list_ellie_edition {
+                    width: 28em;
+                    overflow-y: scroll;
+                    height: 30em;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 13px;
+                    float: right;
+                }
+                .div_list_ellie_edition ul {
+                    list-style-type: square;
+                }
+                .div_list_ellie_edition::-webkit-scrollbar {
+                    width: 5px;
+                }
+                .div_list_ellie_edition::-webkit-scrollbar-track {
+                    background: rgb(148, 148, 148);
+                }
+                .div_list_ellie_edition::-webkit-scrollbar-thumb {
+                    background: rgb(255, 208, 0);
+                }
+            </style>
+        </head>
+        <body>
+            <div class="page1">
+                <div class="nav">
+                    <nav class="width_height">
+                        <div class="dropdown">
+                            <button id="myBtn" class="dropbtn">
+                                GAMES
+                                <i class="arrow down"></i>
+                            </button>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="https://www.playstation.com/uk-ua/games/the-last-of-us-left-behind-stand-alone-ps4/">
+                                THE LAST OF US: LEFT BEHIND
+                            </a>
+                            <a href="https://www.playstation.com/uk-ua/games/the-last-of-us-remastered-ps4/">
+                                THE LAST OF US
+                            </a>
+                        </div>
+                        <a href="#">
+                            ABOUT
+                        </a>
+                        <a href="#">
+                            MEDIA
+                        </a>
+                        <a href="#">
+                            NEWS
+                        </a>
+                        <a href="#" id="tprebut">
+                            PRE ORDER
+                        </a>
+                    </nav>
+                </div>
+                <div class="underright_picture">
+                    <div>
+                        <div>   
+                            <img src="https://media.playstation.com/is/image/SCEA/the-last-of-us-part-ii-tall-logo-ps4-us-24aug19?$native_md_t$" class="img_right2">
+                        </div>
+                        <div>
+                            <a href="#" id="bottom_pre_button">
+                                PRE ORDER
+                            </a>
+                            <a href="#" id="watch_button">
+                                WATCH TRAILER
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="img_bottom2"> 
+                </div> 
+            </div>
+            <div class="page2">
+                <div class="img_elly2"></div>
+                <div class="text_elly">
+                    <h1 id="header_the_last">
+                        THE LAST OF US PART II
+                    </h1>
+                    <p class="p_text_elly"> 
+                        Five years after their dangerous journey across the post-pandemic 
+                        United States, Ellie and Joel 
+                        have settled down in Jackson, Wyoming. Living 
+                        amongst a thriving community of survivors has allowed 
+                        them peace and stability, despite the constant threat of 
+                        the infected and other, more desperate survivors.
+                    </p>
+                    <p class="p_text_elly">
+                        When a violent event disrupts that peace, Ellie embarks on a relentless journey to carry 
+                        out justice and find closure. As she hunts those responsible one by one, she is confronted 
+                        with the devastating physical and emotional repercussions of her actions.
+                    </p>
+                </div>
+                <div class="grad_bottom"></div>
+            </div>
+            <div class="page3">
+                <div  class="img_bottom_elly"></div>
+                <div class="header_choose_your_edition">
+                    <h1 id="header_choose">
+                        CHOOSE YOUR EDITION
+                    </h1>
+                    <nav class="nav_choose">
+                        <a href="#">
+                            ELLIE EDITION
+                        </a>
+                        <a href="#">
+                            COLLECTOR'S EDITION
+                        </a>
+                        <a href="#">
+                            SPECIAL EDITION
+                        </a>
+                        <a href="#">
+                            DIGITAL DELUXE EDITION
+                        </a>
+                        <a href="#">
+                            STANDARD EDITIONS
+                        </a>
+                    </nav>
+                </div>
+                <div class="img_choose"></div>
+                <div class="about_ellie_edition">
+                    <h2>ELLIE EDITION</h2>
+                    <a href="#" id="bottom_ellie_edition">
+                        PRE ORDER
+                    </a>
+                    <div class="div_list_ellie_edition">
+                        <p>
+                            Pre-order and receive the following special in-game items at launch:
+                        </p>
+                        <ul>
+                            <li>
+                                Ammo Capacity Upgrade: Instantly unlock an ammo capacity upgrade for Ellie’s pistol.
+                            </li>
+                            <li>
+                                Crafting Training Manual: Instantly unlock the Crafting Training Manual, which provides access to new crafting recipes and upgrades*
+                            </li>
+                        </ul>
+                        <p>
+                            * Supplements required to unlock recipes, skills, and upgrades.
+                        </p>
+                        <p>
+                            The Last of Us Part II Ellie Edition includes the following content:
+                        </p>
+                        <ul class="list_ellie_edition">
+                            <li>
+                                The Last of Us Part II Logo Patch
+                            </li>
+                            <li>
+                                7” Vinyl Record featuring Music from the Original Soundtrack
+                            </li>
+                            <li>
+                                Replica of Ellie’s Backpack
+                            </li>
+                            <li>
+                                48 Page ​Mini Art Book from Dark Horse
+                            </li>
+                            <li>
+                                SteelBook Case with Full Game
+                            </li>
+                            <li>
+                                Lithograph Art Print and Thank You letter 
+                            </li>
+                            <li>
+                                12" Ellie Statue
+                            </li>
+                            <li>
+                                Replica of Ellie’s Bracelet
+                            </li>
+                            <li>
+                                Set of 6 Enamel Pins
+                            </li>
+                            <li>
+                                Set of 5 Stickers
+                            </li>
+                            <li>
+                                PS4 Dynamic Theme**
+                            </li>
+                            <li>
+                                Set of 6 PSN Avatars**
+                            </li>
+                            <li>
+                                Digital Soundtrack**
+                            </li>
+                            <li>
+                                Digital ​Mini Art Book from​ Dark Horse**
+                            </li>
+                        </ul>
+                        <p>
+                            ** Provided by voucher within package. Voucher expires 05/29/2023. Internet connection and an account for PlayStation™Network required to redeem voucher.
+                        </p>
+                    </div>
+                </div>
+                <p class="p_choose">
+                    *Artwork not final and subject to change. Product not to scale.
+                </p>
+                <div class="img_bottom_page3"></div>
+            </div>
+            <script>
+                document.getElementById("myBtn").onclick = function() {myFunction()};
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+            </script>   
+        </body>
+    </html>

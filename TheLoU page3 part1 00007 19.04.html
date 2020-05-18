@@ -8,16 +8,20 @@
             <meta name="author" content="Andrii">
             <meta name="viewport" content="width-devise-width, initial-scale=1.0">
             <style>
-                * {
-                    font-family: oswald semibold;
-                }
                 body {
                     color:rgb(255, 255, 255);
-                    border: 0em;
-                    margin: 0em;
-                    background-color: rgb(255, 0, 0) 84);
-                    height: 44.5em;
-                    width: 80.8em;
+                    background-color: rgb(148, 148, 148);
+                    font-family: oswald semibold;
+                    margin: 0;
+                }
+                .page1 {
+                    color:rgb(255, 255, 255);
+                    height: 45.4em;
+                    width: 80.85em;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image: url("https://github.com/Andrii2203/TheLoU/blob/master/the-last-of-us-outbreak-day-art-01-us-25sep19.jpg?raw=true");
                 }
                 a:visited {
                     color: rgb(148, 148, 148);
@@ -49,24 +53,14 @@
                     
                 }
                 .img_bottom2 {
-                    width: 80.8em;
+                    width: 80.85em;
                     height: 7%;
-                    position: absolute;
-                    bottom: 0;
+                    margin-top: 4.5em;
+                    background-repeat: no-repeat;
+                    background-image: url("https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-bottom-texture-ps4-us-24aug19.png");
                 }
                 .img_right2 {
-                    position: absolute;
-                    width: 17.5%;
-                    height: 72.5%;
-                    left: 3.7%;
-                    bottom: 17.5%;
-                }
-                .img_mature2 {
-                    width: 11%;
-                    height: 9.5%;
-                    position: absolute;
-                    bottom: 9%;
-                    right: 3.6%;
+                    width: 20%;
                 }
                 button {
                     color: rgb(148, 148, 148);
@@ -88,15 +82,30 @@
                     margin-right: 2em;
                 }
                 .underright_picture {
-                    position: absolute;
-                    bottom: 8%;
-                    left: 2.1em;
                     font-size: 17px;
+                    padding-top: 5em;
+                    padding-left: 5em;
                 }
                 .underright_picture a {
                     padding: 10px;
                     color: #000000;
                     margin: 13.5px;
+                }
+                .underright_picture >:nth-child(1) {
+                    float: left;
+                    width: 80%;
+                }
+                .underright_picture >:nth-child(2) {
+                    float: right;
+                    width: 20%;
+                    height: 30em;
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                    background-image: url("https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-esrb-rating-image-block-01-ps4-24jan20-en-us.jpg");
+                    background-size: 150px;
+                }
+                .underright_picture >:nth-child(3) {
+                    clear: both;
                 }
                 #bottom_pre_button {
                     background-color: rgb(255, 208, 0);
@@ -124,20 +133,18 @@
                     color: #000000;
                 }
                 .dropbtn {
-                    background-color: transparent;
-                    color:rgb(148, 148, 148);
-                    padding: 16px;
+                    color:rgb(194, 169, 169);
+                    padding: 0px;
+                    padding-right: 25px;
                     font-size: 16px;
                     border: none;
                     cursor: pointer;
                     font-size: 15.5px;
                 }
-                .dropbtn:hover, .dropbtn:focus {
-                    background-color: transparent;
-                }
-                .dropdown {
+                .dropdown, .dropbtn:active {
                     position: relative;
                     display: inline-block;
+                    color: rgb(255, 208, 0);
                 }
                 .dropdown-content {
                     display: none;
@@ -162,10 +169,6 @@
                 }
                 #tprebut {
                     color: rgb(255, 208, 0);
-                }
-                .maine_img {
-                    height: 44.5em;
-                    width: 80.8em;
                 }
                 .text_elly {
                     width: 31em;  
@@ -195,17 +198,21 @@
                     position: relative;
                     color: #ffffff;
                     height: 40em;
-                    width: 80.8em;
+                    width: 80.85em;
                     background-color: rgb(0, 0, 0);
-                    border: 1px solid red;
+                    top: 0;
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
                 }
-                /* .grad_bottom { 
-                    height: 150px;
-                    background-color: transparent;
-                    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgba(0,0,0,0.0));
-                } */
+                .grad_bottom { 
+                    width: 50m;
+                    height: 40em; 
+                    position: relative;
+                    background-image: radial-gradient(circle, rgba(255,0,0,0)70%, rgb(0,0,0)90%);
+                } 
                 .img_bottom_elly {
-                    width: 80.8em;
+                    width: 80.85em;
                     height: 7%;
                     position: absolute;
                     top: 0;
@@ -213,93 +220,96 @@
                 .page3 {
                     position: relative;
                     color: #ffffff;
-                    height: 43em;
-                    width: 80.8em;
-                    background-color: rgb(0, 0, 0);
-                    border: 1px solid blue;
+                    height: 44em;
+                    width: 80.85em;
+                    background-color: rgb(153, 0, 0);
+                }
+                .maine_img_page3 {
+                    height: 44.5em;
+                    width: 80.85em;
                 }
             </style>
         </head>
         <body>
-            <div class="nav">
-                <nav class="width_height">
-                    <div class="dropdown">
-                        <button id="myBtn" class="dropbtn">
-                            GAMES &#8744
-                        </button>
-                    </div>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="https://www.playstation.com/uk-ua/games/the-last-of-us-left-behind-stand-alone-ps4/">
-                            THE LAST OF US: LEFT BEHIND
+            <div class="page1">
+                <div class="nav">
+                    <nav class="width_height">
+                        <div class="dropdown">
+                            <button id="myBtn" class="dropbtn">
+                                GAMES &#8744
+                            </button>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="https://www.playstation.com/uk-ua/games/the-last-of-us-left-behind-stand-alone-ps4/">
+                                THE LAST OF US: LEFT BEHIND
+                            </a>
+                            <a href="https://www.playstation.com/uk-ua/games/the-last-of-us-remastered-ps4/">
+                                THE LAST OF US
+                            </a>
+                        </div>
+                        <a href="#">
+                            ABOUT
                         </a>
-                        <a href="https://www.playstation.com/uk-ua/games/the-last-of-us-remastered-ps4/">
-                            THE LAST OF US
+                        <a href="#">
+                            MEDIA
                         </a>
-                    </div>
-                    <a href="#">
-                        ABOUT
-                    </a>
-                    <a href="#">
-                        MEDIA
-                    </a>
-                    <a href="#">
-                        NEWS
-                    </a>
-                    <a href="#" id="tprebut">
-                        PRE ORDER
-                    </a>
-                </nav>
-            </div>
-            <div class="underright_picture">
-                    <a href="#" id="bottom_pre_button">
-                        PRE ORDER
-                    </a>
-                    <a href="#" id="watch_button">
-                        WATCH TRAILER
-                    </a>
+                        <a href="#">
+                            NEWS
+                        </a>
+                        <a href="#" id="tprebut">
+                            PRE ORDER
+                        </a>
+                    </nav>
                 </div>
-            <div>
-                <div>      
-                    <img src="https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-bottom-texture-ps4-us-24aug19.png" class="img_bottom2">
-                </div> 
-                <div>
-                    <img src="https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-esrb-rating-image-block-01-ps4-24jan20-en-us.jpg" class="img_mature2">
-                </div>
-                <div>   
-                    <img src="https://media.playstation.com/is/image/SCEA/the-last-of-us-part-ii-tall-logo-ps4-us-24aug19?$native_md_t$" class="img_right2">
-                </div>
-                <img src="https://github.com/Andrii2203/TheLoU/blob/master/the-last-of-us-outbreak-day-art-01-us-25sep19.jpg?raw=true" class="maine_img">
-            </div>
-            <div>
-                <div class="page2 grad_bottom grad_top">
-                    <section>
+                <div class="underright_picture">
+                    <div>
+                        <div>   
+                            <img src="https://media.playstation.com/is/image/SCEA/the-last-of-us-part-ii-tall-logo-ps4-us-24aug19?$native_md_t$" class="img_right2">
+                        </div>
                         <div>
-                            <img src="https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-splash-bgb-ellie-ps4-us-24aug19.jpg" class="img_elly2">
+                            <a href="#" id="bottom_pre_button">
+                                PRE ORDER
+                            </a>
+                            <a href="#" id="watch_button">
+                                WATCH TRAILER
+                            </a>
                         </div>
-                        <div class="text_elly">
-                            <h1 id="header_the_last">THE LAST OF US PART II</h1>
-                            <p class="p_text_elly"> Five years after their dangerous journey across the post-pandemic 
-                                United States, Ellie and Joel 
-                                have settled down in Jackson, Wyoming. Living 
-                                amongst a thriving community of survivors has allowed 
-                                them peace and stability, despite the constant threat of 
-                                the infected and other, more desperate survivors.</p>
-
-                            <p class="p_text_elly">When a violent event disrupts that peace, Ellie embarks on a relentless journey to carry 
-                                out justice and find closure. As she hunts those responsible one by one, she is confronted 
-                                with the devastating physical and emotional repercussions of her actions.</p>
-                        </div>
-                    <section>
+                    </div>
+                    <div>
+                    </div>
+                    <div></div>
                 </div>
+                <div class="img_bottom2"> 
+                </div> 
+            </div>
+            <div class="page2">
+                <section>
+                    <div>
+                        <div class="img_elly2"></div>
+                        <div class="grad_bottom"></div>
+                    </div>
+                    <div class="text_elly">
+                        <h1 id="header_the_last">THE LAST OF US PART II</h1>
+                        <p class="p_text_elly"> Five years after their dangerous journey across the post-pandemic 
+                            United States, Ellie and Joel 
+                            have settled down in Jackson, Wyoming. Living 
+                            amongst a thriving community of survivors has allowed 
+                            them peace and stability, despite the constant threat of 
+                            the infected and other, more desperate survivors.</p>
+                        <p class="p_text_elly">When a violent event disrupts that peace, Ellie embarks on a relentless journey to carry 
+                            out justice and find closure. As she hunts those responsible one by one, she is confronted 
+                            with the devastating physical and emotional repercussions of her actions.</p>
+                    </div>
+                <section>
             </div>
             <div>
                 <div class="page3">
                     <section>
                         <div>
-                            <img src="https://github.com/Andrii2203/TheLoU/blob/master/the-last-of-us-part-ii-top-texture-ps4-us-24aug19.png?raw=true" class="img_bottom_elly">
+                            <img src="https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-forest-bg-ps4-us-24aug19.jpg" class="maine_img_page3">
                         </div>
                         <div>
-                            <img src="https://raw.githubusercontent.com/Andrii2203/TheLoU/master/the-last-of-us-part-ii-forest-bg-ps4-us-24aug19.jpg">
+                            <img src="https://github.com/Andrii2203/TheLoU/blob/master/the-last-of-us-part-ii-top-texture-ps4-us-24aug19.png?raw=true" class="img_bottom_elly">
                         </div>
                     </section>
                 </div>
